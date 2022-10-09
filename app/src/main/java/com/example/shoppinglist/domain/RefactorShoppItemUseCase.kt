@@ -1,7 +1,7 @@
 package com.example.shoppinglist.domain
 
-class RefactorShoppItemUseCase {
+class RefactorShoppItemUseCase(private val shoppListRepository: ShoppListRepository) {
     fun refactorShoppItem(shoppItem: ShoppItem){
-        TODO()
+        shoppListRepository.refactorShoppItem(shoppItem)
     }
 }
